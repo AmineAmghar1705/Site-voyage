@@ -1,0 +1,172 @@
+/*@import url('https://fonts.googleapis.com/css?family=Tangerine');
+*//*tangerine*//*body{
+	font-family:'Tangerine',sans-serif ;
+	background-color: pink;
+}*/
+/*GENERAL*/
+body{
+	overflow-x: hidden;
+}
+/*header*/
+header,footer{
+	background-image:linear-gradient(45deg,#FFEDD8,#E3B7A0,#BF9270);
+	/*l instruction est utiliser pour cree un degrader liniaire
+	comme arriere plan d un elemment html
+	45-180 deg : valeur d angle utliser pour specifier la direction dans la quelle
+	,,,: Il commence avec la couleur 1, se fond ensuite dans le 2 eme couleur, jusque la derniare*/
+}
+/*premiere ligne*/
+#logo{
+	width: 50%;
+	margin: 5px;/*margin=espace entre l element est la bordure*/
+}
+#divbuttonheader{
+	float: right;
+
+}
+.btnheader{
+	float: right;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 15px;
+	color: #B99270;
+	border-radius: 15px;
+	/*box shadow permet d ecree un ou plusieurs shadow en mm temps//en peut entree 4 valeur/1er valeur pours la distance horizontale/2eme distance vertical/3emele flou de l embre(default 0)/4eme valeur cc est la couleur de l ombre*/
+	box-shadow: 1px 1px 0 black , 2px 2px black ;
+}
+/*deuxieme ligne*/
+	#headerimg{
+		background-image: url(../image/narimane.jpg);
+		height: 300px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#divmenu{
+		float: right;
+		margin-top: 15px;
+	}
+#divmenu ul{
+	list-style: none;
+	margin-right: 15px;
+}
+#divmenu ul li{
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+#headerph{
+	text-align: center;
+	margin-top: 6%;
+	color: white;
+	text-shadow: 1px 1px 0 #873900 , 2px 2px #963F00 ,3px 3px #A74600;
+}
+#headerph a , #divmenu ul li a {
+color: white;
+font-size: 20px;
+}
+#headerph button ,#divmenu li {
+	border-radius: 15px;
+background-image:linear-gradient(45deg,#FFEDD8,#E3B7A0,#BF9270);
+text-shadow: 1px 1px 0 #873900 , 2px 2px #963F00 ,3px 3px #A74600;
+
+}
+#headerph a , #divmenu a :hover{
+text-decoration: none;
+}
+/*section service*/
+
+/*section service end */
+/* section */
+.service{
+	
+	margin: 15px;
+	margin-right: 25px; 
+	}
+.service:hover{
+	width: 150px;
+}
+.service a {
+	color: black; 
+}
+.service img {
+	width: 100px;
+	}
+#section-apropos{
+	text-align: center;
+}
+.text{
+	position: absolute;
+	bottom:0;
+	left: 30%;
+	color: white;
+	font-family:'popplns'sans serif;
+	width:100%;
+	padding:0 20px ;
+	transform: rotate(-91deg);
+	transform-origin: left center;
+	/*transform: applique une retation a un elemment vous pauver utiliser des valeur positife pour une retation dans le sanse horaire et des valeur negatife poure le contraire
+	transforme origine : definie l origine de la transformation appliquer a l element
+	scale,translate , rotate , skeu, matrix , */
+		/*absolute: cette proprite definie la position d un element d un element on utilisant les cordoner de position specifier
+	l elemnt est retirer de flux normal de la page est sa position est determiner par raport a son contoneur parent le plus proche ayant une position relatife ou par raport cort de documant si il ya pas de parent positioner  */
+	
+}
+.text p{
+		font-size: 8px;
+	}
+	.profile :hover{
+		width: 250px;
+	}
+	.profile:hover .text{
+		left: 0;
+		bottom: 5%;
+		transform: rotate(0);
+	}
+	#section-personnel{
+		height: 400px;
+	}
+	#flex-container,.service,#section-services .row{
+display: flex;
+/*specifier que le conteneur doit utliliser un affichage flexible (flex-box)*/
+align-items: center;
+/*centrer les element verticalement*/
+justify-content: center;
+/*centrer leselement horizontalement*/
+/*en combinant ces 3 instruction vous cree un contoneur avec un affichage flexible est les element sans centrer vertcalement et horisontalement*/
+	}
+	.profile{
+		float: left;
+		width: 200px;
+		height: 400px;
+		padding: 0px;
+		overflow: hidden;
+		/*est ytiliser pour gerer pour le comportemant pour le depacement de contenue d un element*/
+		border-radius: 7px;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.profile img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		/*est utiliser pour specifier comment une image ou un autr e element de type obkect doit etre adjuster a l interieur de son conteneur*/
+	}
+/*footer*/
+#slegon , #copyright{
+	text-align: center;
+	font-weight: bold;
+}
+#divfooter{
+	margin:auto ;
+	padding: 15px;
+	padding-left: 20%;
+}
+.rsxdiv{
+	margin:auto;
+	text-align: center;
+}
+.rsxdiv a {
+	text-align: center;
+	margin: auto;
+	color: black;
+}
